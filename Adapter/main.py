@@ -8,7 +8,6 @@ class Target:
         return f"Target Request: ({a}, {b})"
 
 
-
 class Adaptee:
     """
     This class defines a specific version of the request called specific_request.
