@@ -32,7 +32,7 @@ class WeatherStation(Observable):
 
         print("WeatherStation: Notifying observers...")
         for observer in self._observers:
-            observer.update(self)
+            observer.update()
 
     def some_business_logic(self) -> None:
         """
@@ -45,3 +45,6 @@ class WeatherStation(Observable):
         self.temperature = randrange(0, 30)
         print(f"WeatherStation: Temperature has just changed to: {self.temperature}")
         self.notify()
+
+    def get_temperature(self) -> int:
+        return self.temperature

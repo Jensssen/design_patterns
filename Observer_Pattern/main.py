@@ -8,11 +8,11 @@ if __name__ == "__main__":
     weatherStation = WeatherStation()
 
     # Create one Observer that observes the Weather Station
-    weatherStationObserver1 = WeatherStationObserver1()
+    weatherStationObserver1 = WeatherStationObserver1(weatherStation)
     weatherStation.addObserver(weatherStationObserver1)
 
     # Create a second Observer that also observes the Weather Station
-    weatherStationObserver2 = WeatherStationObserver2()
+    weatherStationObserver2 = WeatherStationObserver2(weatherStation)
     weatherStation.addObserver(weatherStationObserver2)
 
     # The Weather station performs some business logic (eg. measure the current temperature)
