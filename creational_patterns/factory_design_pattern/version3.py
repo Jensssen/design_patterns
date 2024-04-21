@@ -17,7 +17,6 @@ class Vehicle(ABC):
 
 
 class Car(Vehicle):
-    """Regular Car Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 220
@@ -30,7 +29,6 @@ class Car(Vehicle):
 
 
 class Truck(Vehicle):
-    """Regular Truck Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 120
@@ -45,7 +43,6 @@ class Truck(Vehicle):
 class VehicleFactory:
 
     def create_and_prepare_vehicle(self, vehicle_speed: str) -> Vehicle:
-        """Create and prepare a new Vehicle that belongs to this Factory."""
         try:
             vehicle = self.create_vehicle(vehicle_speed)
             vehicle.prepare_vehicle()
@@ -54,7 +51,6 @@ class VehicleFactory:
             raise AttributeError(f"Vehicle Type {vehicle_speed} not supported.")
 
     def create_vehicle(self, vehicle_speed: str) -> Vehicle | None:
-        """Returns a new Vehicle depending on user selection."""
         if vehicle_speed == "fast":
             return Car()
         if vehicle_speed == "slow":

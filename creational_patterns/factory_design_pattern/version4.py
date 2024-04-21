@@ -17,7 +17,6 @@ class Vehicle(ABC):
 
 
 class Car(Vehicle):
-    """Regular Car Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 220
@@ -30,7 +29,6 @@ class Car(Vehicle):
 
 
 class Truck(Vehicle):
-    """Regular Truck Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 120

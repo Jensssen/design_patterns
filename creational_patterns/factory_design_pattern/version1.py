@@ -1,6 +1,4 @@
 class Car:
-    """Regular Car Vehicle."""
-
     def get_max_speed_in_kmh(self) -> int:
         return 220
 

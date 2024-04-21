@@ -1,4 +1,4 @@
-# Factory Pattern
+# Factory Pattern / Abstract Factory Pattern
 
 ## Version 1
 

@@ -17,7 +17,6 @@ class GroundVehicle(ABC):
 
 
 class Car(GroundVehicle):
-    """Regular Car Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 220
@@ -30,7 +29,6 @@ class Car(GroundVehicle):
 
 
 class Truck(GroundVehicle):
-    """Regular Truck Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 120
@@ -58,7 +56,6 @@ class AirVehicle(ABC):
 
 
 class Airplane(AirVehicle):
-    """Regular Airplane Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 800
@@ -71,7 +68,6 @@ class Airplane(AirVehicle):
 
 
 class Helicopter(AirVehicle):
-    """Regular Helicopter Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 400

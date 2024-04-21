@@ -1,5 +1,4 @@
 class Car:
-    """Regular Car Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 220
@@ -12,7 +11,6 @@ class Car:
 
 
 class Truck:
-    """Regular Truck Vehicle."""
 
     def get_max_speed_in_kmh(self) -> int:
         return 120
@@ -25,7 +23,6 @@ class Truck:
 
 
 def create_vehicle(vehicle_speed: str) -> Car | Truck:
-    """Returns a new Vehicle depending on user selection."""
     if vehicle_speed == "fast":
         return Car()
     if vehicle_speed == "slow":
